@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name":"Random Image Fetcher",
+    "description":"A web extension displaying random images",
+    "action": {
+        "default_popup": "index.html"
+    }
+}
