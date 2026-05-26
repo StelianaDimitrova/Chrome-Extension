@@ -7,3 +7,10 @@
   justify-content: center;
   margin: 4px;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: center;
+}

@@ -12,15 +12,18 @@ function App() {
   const [timestamp, setTimestamp] = useState("");
 
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   async function handleClick() {
     setLoading(true);
+    setError("");
 
     try {
       const data = await fetchImageUrl();
       setImageURL(data.url);
       setTimestamp(data.timestamp);
     } catch (error) {
+      setError(error.message);
       console.error(error.message);
     } finally {
       setLoading(false);
@@ -29,6 +32,7 @@ function App() {
 
   return (
     <main className="main">
+      {error && <p className="error">Something went wrong: {error}</p>}
       {loading ? (
         <CircularProgress aria-label="Loading…" sx={{ m: 2 }} />
       ) : (
