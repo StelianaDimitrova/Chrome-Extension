@@ -6,7 +6,7 @@ export async function fetchImageUrl() {
   }
 
   const data = await response.json();
-  const timestamp = new Date().toLocaleString();
+  const timestamp = new Date().toLocaleString("en-GB");
 
   return { url: data.message, timestamp };
 }
