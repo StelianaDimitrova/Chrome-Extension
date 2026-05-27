@@ -2,7 +2,6 @@
 
 A lightweight Chrome extension built with React and Vite that fetches and displays a random image from a public API.
 
----
 
 ## Features
 
@@ -14,7 +13,6 @@ A lightweight Chrome extension built with React and Vite that fetches and displa
 - Error handling
 - Prevents multiple concurrent requests
 
----
 
 ## Tech Stack
 
@@ -25,7 +23,6 @@ A lightweight Chrome extension built with React and Vite that fetches and displa
 - Material UI (CircularProgress)
 - Chrome Extension (Manifest V3)
 
----
 
 ## API Used
 
@@ -33,8 +30,6 @@ https://dog.ceo/dog-api/
 
 Returns random dog images.
 
-
----
 
 ## Installation
 
@@ -63,7 +58,6 @@ Build the extension:
 npm run build
 ```
 
----
 
 ## Load Extension in Chrome
 
@@ -77,8 +71,6 @@ chrome://extensions
 4. Click **Load unpacked**
 5. Select the `dist` folder (generated after `npm run build`)
 
-
----
 
 ## 🧠 How It Works
 
