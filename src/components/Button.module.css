@@ -8,7 +8,12 @@
   padding: 8px;
 }
 
-.button:hover {
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:not([disabled]):hover {
   cursor: pointer;
   background-color: rgb(233, 233, 233);
 }
