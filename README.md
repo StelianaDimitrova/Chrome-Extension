@@ -72,7 +72,7 @@ chrome://extensions
 5. Select the `dist` folder (generated after `npm run build`)
 
 
-## 🧠 How It Works
+## How It Works
 
 When the button is clicked:
 
