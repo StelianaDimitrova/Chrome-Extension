@@ -15,6 +15,8 @@ function App() {
   const [error, setError] = useState("");
 
   async function handleClick() {
+    if (loading) return;
+
     setLoading(true);
     setError("");
 
